@@ -1,0 +1,8 @@
+{
+    "name": "portpolio",
+    "short_name": "port",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "rgb(8 145 178)",
+    "theme_color": "rgb(34 211 238)"
+}

@@ -1,0 +1,455 @@
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .profile-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .profile-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .profile-card::before,
+  .profile-card::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(75 85 99); /* Dark background color */
+    border-radius: 12px; /* Rounded corners */
+    z-index: 1; /* Position behind the image */
+  }
+
+  /* .profile-card::before {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: rotate(-10deg);
+  } */
+
+  .profile-card::after {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(22deg);
+  }
+
+  .ahead {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ahead1 {
+    color: rgb(75 85 99);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .amain {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .aflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px 10px 20px;
+  }
+  .adics {
+    color: rgb(209 213 219);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .aflex1 {
+    width: 100%;
+    padding: 20px;
+  }
+  .aflex2 {
+    width: 100%;
+  }
+  .aflex3 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .abtn {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 7px 15px;
+  }
+  .abtn:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  .abtnn {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .counter {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .cdiv {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .rtinn-title {
+    font-size: 20px;
+    color: rgb(209 213 219);
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 760px) {
+  .profile-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .profile-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .profile-card::before,
+  .profile-card::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(75 85 99); /* Dark background color */
+    border-radius: 12px; /* Rounded corners */
+    z-index: 1; /* Position behind the image */
+  }
+
+  /* .profile-card::before {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: rotate(-10deg);
+  } */
+
+  .profile-card::after {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(22deg);
+  }
+
+  .ahead {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ahead1 {
+    color: rgb(75 85 99);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .amain {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .aflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .adics {
+    color: rgb(209 213 219);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+  }
+  .aflex1 {
+    width: 100%;
+    padding: 20px;
+  }
+  .aflex2 {
+    width: 100%;
+  }
+  .aflex3 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .abtn {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 8px 18px;
+  }
+  .abtn:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  .abtnn {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .counter {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .cdiv {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .rtinn-title {
+    font-size: 20px;
+    color: rgb(209 213 219);
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 960px) {
+  .profile-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .profile-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .profile-card::before,
+  .profile-card::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(75 85 99); /* Dark background color */
+    border-radius: 12px; /* Rounded corners */
+    z-index: 1; /* Position behind the image */
+  }
+
+  /* .profile-card::before {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: rotate(-10deg);
+  } */
+
+  .profile-card::after {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(22deg);
+  }
+
+  .ahead {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ahead1 {
+    color: rgb(75 85 99);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .amain {
+    padding: 20px;
+  }
+  .aflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .adics {
+    color: rgb(209 213 219);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .aflex1 {
+    width: 60%;
+    padding: 20px 20px 20px 20px;
+  }
+  .aflex2 {
+    width: 40%;
+  }
+  .aflex3 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .abtn {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  .abtn:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  .abtnn {
+    margin: 20px 0px;
+  }
+  .counter {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .cdiv {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .rtinn-title {
+    font-size: 20px;
+    color: rgb(209 213 219);
+  }
+}
+@media screen and (min-width: 961px) {
+  .profile-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .profile-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .profile-card::before,
+  .profile-card::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(75 85 99); /* Dark background color */
+    border-radius: 12px; /* Rounded corners */
+    z-index: 1; /* Position behind the image */
+  }
+
+  /* .profile-card::before {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: rotate(-10deg);
+  } */
+
+  .profile-card::after {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(22deg);
+  }
+
+  .ahead {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ahead1 {
+    color: rgb(75 85 99);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .amain {
+    padding: 20px;
+  }
+  .aflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .adics {
+    color: rgb(209 213 219);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .aflex1 {
+    width: 60%;
+    padding: 20px 20px 20px 80px;
+  }
+  .aflex2 {
+    width: 40%;
+  }
+  .aflex3 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .abtn {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  .abtn:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  .abtnn {
+    margin: 20px 0px;
+  }
+  .counter {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .cdiv {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .rtinn-title {
+    font-size: 20px;
+    color: rgb(209 213 219);
+  }
+}

@@ -1,0 +1,401 @@
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .cmain {
+    background-color: rgb(17 24 39);
+    padding: 10px;
+  }
+  .cflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  .cflex1 {
+    width: 100%;
+  }
+  .cflex2 {
+    width: 100%;
+  }
+  .cinput {
+    width: 90%;
+    height: 30px;
+    background-color: rgb(55 65 81);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 45px;
+    font-size: 20px;
+    margin: 10px;
+  }
+  input::placeholder {
+    color: rgb(156 163 175); 
+  }
+  textarea::placeholder {
+    color: rgb(156 163 175); 
+  }
+  .cfllex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .cicon {
+    color: white;
+    background-color: rgb(8 145 178);
+    border-radius: 50%;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  .ctxt {
+    color: white;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .ctxt:hover {
+    text-decoration: underline;
+  }
+  .hflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .hflex {
+    display: inline-block;
+    position: relative;
+    animation: slide-in-left 6s ease-in-out forwards;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
+  .hh {
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .hdis {
+    color: rgb(229 231 235);
+    font-size: 16px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 760px) {
+  .cmain {
+    background-color: rgb(17 24 39);
+    padding: 30px;
+  }
+  .cflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 40px;
+  }
+  .cflex1 {
+    width: 100%;
+  }
+  .cflex2 {
+    width: 100%;
+  }
+  .cinput {
+    width: 90%;
+    height: 40px;
+    background-color: rgb(55 65 81);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 45px;
+    font-size: 20px;
+    margin: 10px;
+  }
+  input::placeholder {
+    color: rgb(156 163 175);
+  }
+  textarea::placeholder {
+    color: rgb(156 163 175);
+  }
+  .cfllex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .cicon {
+    color: white;
+    background-color: rgb(8 145 178);
+    border-radius: 50%;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+  .ctxt {
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .ctxt:hover {
+    text-decoration: underline;
+  }
+  .hflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .hflex {
+    display: inline-block;
+    position: relative;
+    animation: slide-in-left 6s ease-in-out forwards;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .hh {
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .hdis {
+    color: rgb(229 231 235);
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 960px) {
+  .cmain {
+    background-color: rgb(17 24 39);
+    padding: 30px 30px 30px 10px;
+  }
+  .cflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+    padding: 40px;
+  }
+  .cflex1 {
+    width: 60%;
+  }
+  .cflex2 {
+    width: 40%;
+  }
+  .cinput {
+    width: 90%;
+    height: 50px;
+    background-color: rgb(55 65 81);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 45px;
+    font-size: 20px;
+    margin: 10px;
+  }
+  input::placeholder {
+    color: rgb(156 163 175);
+  }
+  textarea::placeholder {
+    color: rgb(156 163 175); 
+  }
+  .cfllex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .cicon {
+    color: white;
+    background-color: rgb(8 145 178);
+    border-radius: 50%;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+  .ctxt {
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .ctxt:hover {
+    text-decoration: underline;
+  }
+  .hflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    padding: 80px 40px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .hflex {
+    display: inline-block;
+    position: relative;
+    animation: slide-in-left 6s ease-in-out forwards;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
+  .hh {
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .hdis {
+    color: rgb(229 231 235);
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .cmain {
+    background-color: rgb(17 24 39);
+    padding: 30px 30px 30px 10px;
+  }
+  .cflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 100px 100px 100px;
+    padding: 40px;
+  }
+  .cflex1 {
+    width: 65%;
+  }
+  .cflex2 {
+    width: 35%;
+  }
+  .cinput {
+    width: 90%;
+    height: 50px;
+    background-color: rgb(55 65 81);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 45px;
+    font-size: 20px;
+    margin: 10px;
+  }
+  input::placeholder {
+    color: rgb(156 163 175); 
+  }
+  textarea::placeholder {
+    color: rgb(156 163 175);
+  }
+  .cfllex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .cicon {
+    color: white;
+    background-color: rgb(8 145 178);
+    border-radius: 50%;
+    /* padding: 10px; */
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+  .ctxt {
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .ctxt:hover {
+    text-decoration: underline;
+  }
+  .hflex {
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 200px 100px 200px;
+    padding: 80px 40px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .hflex {
+    display: inline-block;
+    position: relative;
+    animation: slide-in-left 6s ease-in-out forwards;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
+  .hh {
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .hdis {
+    color: rgb(229 231 235);
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}

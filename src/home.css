@@ -1,0 +1,401 @@
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .hflex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: rgb(17 24 39);
+    position: relative;
+  }
+  .hdiv1 {
+    width: 100%;
+    text-align: center;
+  }
+  .hpic {
+    width: 250px;
+    height: 250px;
+  }
+  .hdiv2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+  .hh1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(8 145 178);
+    text-align: center;
+  }
+  .hh2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+  .hflex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hh3 {
+    display: none;
+  }
+  .hh4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(34 211 238);
+  }
+  .hbtn {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .rhbttn {
+    text-align: center;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  .rwht {
+    width: 50px;
+    height: 50px;
+  }
+  .wht {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
+    margin: 10px;
+    margin-bottom: 50px;
+    animation: bounce 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 50px, 0);
+    }
+  }
+  .swidth {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 760px) {
+  .hflex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: rgb(17 24 39);
+    position: relative;
+  }
+  .hdiv1 {
+    width: 100%;
+    text-align: center;
+  }
+  .hpic {
+    width: 350px;
+    height: 350px;
+  }
+  .hdiv2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+  .hh1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(8 145 178);
+    text-align: center;
+  }
+  .hh2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+  .hflex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hh3 {
+    /* font-size: 30px;
+                font-weight: 600;
+                color: rgb(75 85 99);
+              margin-right: -50px;
+                */
+    display: none;
+  }
+  .hh4 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(34 211 238);
+  }
+  .hbtn {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .rhbttn {
+    text-align: center;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  .rwht {
+    width: 50px;
+    height: 50px;
+  }
+  .wht {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
+    margin: 30px;
+    animation: bounce 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 50px, 0);
+    }
+  }
+  .hpic {
+    width: 350px;
+    height: 350px;
+  }
+  .swidth {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 940px) {
+  .swidth {
+    width: 300px;
+  }
+  .hflex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: rgb(17 24 39);
+    position: relative;
+  }
+  .hpic {
+    width: 400px;
+    height: 400px;
+  }
+  .hdiv1 {
+    width: 50%;
+    text-align: end;
+  }
+  .himg {
+    width: 100%;
+    height: 100%;
+    right: 0;
+  }
+  .hdiv2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hh1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(8 145 178);
+  }
+  .hh2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+  }
+  .hflex2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hh3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(75 85 99);
+    width: 200px;
+  }
+  .hh4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(34 211 238);
+  }
+  .hbtn {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 5px 20px;
+  }
+  .hbtn:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  .rwht {
+    width: 70px;
+    height: 70px;
+  }
+  .wht {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
+    margin: 50px;
+    animation: bounce 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 50px, 0);
+    }
+  }
+}
+@media screen and (min-width: 941px) {
+  .swidth {
+    width: 350px;
+  }
+  .hflex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    background-color: rgb(17 24 39);
+    position: relative;
+  }
+  .hdiv1 {
+    width: 50%;
+    text-align: end;
+  }
+  .himg {
+    width: 100%;
+    height: 100%;
+    right: 0;
+  }
+  .hdiv2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hh1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(8 145 178);
+  }
+  .hh2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+  }
+  .hflex2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hh3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(75 85 99);
+  }
+  .hh4 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(34 211 238);
+  }
+  .hbtn {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(8 145 178);
+    border: 1px solid rgb(8 145 178);
+    border-radius: 20px;
+    padding: 5px 20px;
+  }
+  .hbtn:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  .rwht {
+    width: 70px;
+    height: 70px;
+  }
+  .wht {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
+    margin: 50px;
+    animation: bounce 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 50px, 0);
+    }
+  }
+}
