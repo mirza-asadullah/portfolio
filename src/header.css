@@ -144,11 +144,12 @@ z-index: 20000;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: relative;
     z-index: 500000;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     height: 70px;
+    /* border-bottom: black; */
   }
 
   .logo img {
@@ -202,29 +203,27 @@ z-index: 20000;
   }
 
   .nav-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    top: 70px; /* Adjust according to header height */
     left: 0;
-    height: 100%;
-    width: 0;
+    width: 100%;
+    height: auto; /* Adjust as needed */
+    max-height: 300px; /* Prevents full-screen height */
     overflow: hidden;
     background-color: white;
-    transition: width 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    transition: max-height 0.3s ease-in-out;
+    display: none; /* Initially hidden */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
-
+  
   .nav-menu.open {
-    width: 100%;
+    display: block; /* Show when open */
   }
 
   .rhpages {
     display: flex;
     flex-direction: column;
+    background-color: rgb(243, 238, 238);
   }
   .rhname {
     color: #0891b2 !important;
@@ -235,12 +234,14 @@ z-index: 20000;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+   text-decoration: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .rhname:hover {
-    color: white !important;
-    background: #3b82f6 !important;
+    color: #ffffff !important;
+    background: #0891b2 !important;
     margin: 0;
-    border: 2px solid #3b82f6 !important;
+    border: 2px solid #0891b2!important;
     border-radius: 10px;
   }
 }
@@ -256,7 +257,7 @@ z-index: 20000;
     background-color: white;
     position: relative;
     z-index: 500000;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black !important;
     height: 100px;
   }
 
@@ -311,29 +312,29 @@ z-index: 20000;
   }
 
   .nav-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    top: 70px; /* Adjust according to header height */
     left: 0;
-    height: 100%;
-    width: 0;
+    width: 100%;
+    height: auto; /* Adjust as needed */
+    max-height: 300px; /* Prevents full-screen height */
     overflow: hidden;
     background-color: white;
-    transition: width 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    transition: max-height 0.3s ease-in-out;
+    display: none; /* Initially hidden */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
-
+  
   .nav-menu.open {
-    width: 100%;
+    display: block; /* Show when open */
   }
 
   .rhpages {
+    
     display: flex;
     flex-direction: column;
+    background-color: rgb(243, 238, 238);
+    border-top: 1px solid black;
   }
   .rhname {
     color: #0891b2 !important;
@@ -344,12 +345,15 @@ z-index: 20000;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    
   }
   .rhname:hover {
-    color: white !important;
-    background: #3b82f6 !important;
+    color: #ffffff !important;
+    background: #0891b2 !important;
     margin: 0;
-    border: 2px solid #3b82f6 !important;
+    border: 2px solid #0891b2!important;
     border-radius: 10px;
   }
 }
