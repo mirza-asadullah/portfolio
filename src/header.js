@@ -31,7 +31,7 @@ export default function Header() {
   const scrollToAbout = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 500 : 1150, // Adjust for mobile vs desktop
+      top: window.innerWidth <= 767 ? 500 : 950, // Adjust for mobile vs desktop
       behavior: 'smooth'
     });
     closeMenu();
@@ -58,7 +58,7 @@ export default function Header() {
   const scrollToContact = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 4700 : 4650,
+      top: window.innerWidth <= 767 ? 4700 : 450,
       behavior: 'smooth'
     });
     closeMenu();
