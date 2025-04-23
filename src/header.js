@@ -31,7 +31,7 @@ export default function Header() {
   const scrollToAbout = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 500 : 1050, // Adjust for mobile vs desktop
+      top: window.innerWidth <= 767 ? 750 : 850, // Adjust for mobile vs desktop
       behavior: 'smooth'
     });
     closeMenu();
@@ -40,7 +40,7 @@ export default function Header() {
   const scrollToSkills = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 1850 : 1800,
+      top: window.innerWidth <= 767 ? 2035 : 1700,
       behavior: 'smooth'
     });
     closeMenu();
@@ -49,7 +49,7 @@ export default function Header() {
   const scrollToProjects = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 3700 : 3400,
+      top: window.innerWidth <= 767 ? 3810 : 3350,
       behavior: 'smooth'
     });
     closeMenu();
@@ -58,7 +58,7 @@ export default function Header() {
   const scrollToContact = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 4700 : 450,
+      top: window.innerWidth <= 767 ? 5000 : 4500,
       behavior: 'smooth'
     });
     closeMenu();
