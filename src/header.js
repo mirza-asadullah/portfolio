@@ -49,7 +49,7 @@ export default function Header() {
   const scrollToProjects = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 3500 : 3400,
+      top: window.innerWidth <= 767 ? 3700 : 3400,
       behavior: 'smooth'
     });
     closeMenu();
