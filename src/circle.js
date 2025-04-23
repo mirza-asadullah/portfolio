@@ -1,35 +1,64 @@
-import React from 'react';
-import { CircularProgress, Box, Typography } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import './circle.css';
 
 const CircularProgressBar = ({ value }) => {
+  const [progress, setProgress] = useState(0);
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true
+  });
+
+  useEffect(() => {
+    if (inView) {
+      const timer = setTimeout(() => {
+        const interval = setInterval(() => {
+          setProgress(prev => {
+            if (prev < value) {
+              return prev + 1;
+            } else {
+              clearInterval(interval);
+              return prev;
+            }
+          });
+        }, 20);
+        
+        return () => clearInterval(interval);
+      }, 300); // Small delay before starting animation
+      
+      return () => clearTimeout(timer);
+    }
+  }, [inView, value]);
+
+  // Calculate dash array and offset values
+  const radius = 40;
+  const circumference = 2 * Math.PI * radius;
+  const dashOffset = circumference - (progress / 100) * circumference;
+
   return (
-    <Box position="relative" display="inline-flex">
-      <CircularProgress 
-        variant="determinate" 
-        value={value} 
-        size={100} 
-        thickness={5} 
-        sx={{ color: '#00adb5' }}
-      />
-      <Box
-        top={0}
-        left={0}
-        bottom={0}
-        right={0}
-        position="absolute"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <Typography 
-          variant="h6" 
-          component="div" 
-          color="white"
-        >
-          {`${Math.round(value)}%`}
-        </Typography>
-      </Box>
-    </Box>
+    <div className="circular-progress" ref={ref}>
+      <svg width="120" height="120" viewBox="0 0 100 100">
+        <circle
+          className="progress-bg"
+          cx="50"
+          cy="50"
+          r={radius}
+          strokeWidth="8"
+        />
+        <circle
+          className="progress-bar"
+          cx="50"
+          cy="50"
+          r={radius}
+          strokeWidth="8"
+          strokeDasharray={circumference}
+          strokeDashoffset={dashOffset}
+        />
+        <text x="50" y="50" className="progress-text">
+          {progress}%
+        </text>
+      </svg>
+    </div>
   );
 };
 

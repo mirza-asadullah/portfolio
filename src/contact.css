@@ -1,401 +1,287 @@
-@media screen and (min-width: 320px) and (max-width: 540px) {
-  .cmain {
-    background-color: rgb(17 24 39);
-    padding: 10px;
-  }
-  .cflex {
-    background-color: rgb(31 41 55);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-  }
-  .cflex1 {
-    width: 100%;
-  }
-  .cflex2 {
-    width: 100%;
-  }
-  .cinput {
-    width: 90%;
-    height: 30px;
-    background-color: rgb(55 65 81);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding-left: 45px;
-    font-size: 20px;
-    margin: 10px;
-  }
-  input::placeholder {
-    color: rgb(156 163 175); 
-  }
-  textarea::placeholder {
-    color: rgb(156 163 175); 
-  }
-  .cfllex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 20px;
-  }
-  .cicon {
-    color: white;
-    background-color: rgb(8 145 178);
-    border-radius: 50%;
-    font-size: 25px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-  }
-  .ctxt {
-    color: white;
-    font-size: 16px;
-    padding-top: 10px;
-  }
-  .ctxt:hover {
-    text-decoration: underline;
-  }
-  .hflex {
-    background-color: rgb(31 41 55);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .hflex {
-    display: inline-block;
-    position: relative;
-    animation: slide-in-left 6s ease-in-out forwards;
-    font-size: 2.5rem;
-    color: #fff;
-  }
-
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0); 
-      opacity: 1;
-    }
-  }
-  .hh {
-    color: white;
-    font-size: 20px;
-    padding-top: 20px;
-    font-weight: 600;
-    text-align: center;
-  }
-  .hdis {
-    color: rgb(229 231 235);
-    font-size: 16px;
-    padding-top: 20px;
-  }
+/* Base styles that apply to all screen sizes */
+.cmain {
+  background-color: rgb(17 24 39);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
-@media screen and (min-width: 541px) and (max-width: 760px) {
-  .cmain {
-    background-color: rgb(17 24 39);
-    padding: 30px;
-  }
-  .cflex {
-    background-color: rgb(31 41 55);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 40px;
-  }
-  .cflex1 {
-    width: 100%;
-  }
-  .cflex2 {
-    width: 100%;
-  }
-  .cinput {
-    width: 90%;
-    height: 40px;
-    background-color: rgb(55 65 81);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding-left: 45px;
-    font-size: 20px;
-    margin: 10px;
-  }
-  input::placeholder {
-    color: rgb(156 163 175);
-  }
-  textarea::placeholder {
-    color: rgb(156 163 175);
-  }
-  .cfllex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 30px;
-  }
-  .cicon {
-    color: white;
-    background-color: rgb(8 145 178);
-    border-radius: 50%;
-    font-size: 35px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-  }
-  .ctxt {
-    color: white;
-    font-size: 24px;
-    padding-top: 20px;
-  }
-  .ctxt:hover {
-    text-decoration: underline;
-  }
-  .hflex {
-    background-color: rgb(31 41 55);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .hflex {
-    display: inline-block;
-    position: relative;
-    animation: slide-in-left 6s ease-in-out forwards;
-    font-size: 2.5rem;
-    color: #fff;
-  }
 
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+.amain {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ahead {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ahead1 {
+  color: rgb(156 163 175);
+  font-size: 1.2rem;
+}
+
+.accent-text {
+  color: rgb(8 145 178);
+}
+
+.cflex {
+  background-color: rgb(31 41 55);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.cflex1, .cflex2 {
+  width: 100%;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.cinput {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(55 65 81);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.cinput:focus {
+  outline: 2px solid rgb(8 145 178);
+  background-color: rgb(75 85 99);
+}
+
+.textarea {
+  height: 150px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(156 163 175);
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.hbtn {
+  background-color: rgb(8 145 178);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hbtn:hover {
+  background-color: rgb(6 182 212);
+  transform: translateY(-2px);
+}
+
+.hbtn:disabled {
+  background-color: rgb(107 114 128);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cfllex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(8 145 178);
+  border-radius: 50%;
+  font-size: 20px;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.ctxt {
+  color: white;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.contact-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover .ctxt {
+  color: rgb(8 145 178);
+}
+
+.alert-box {
+  padding: 10px;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 800px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.success {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: rgb(16, 185, 129);
+  border: 1px solid rgb(16, 185, 129);
+}
+
+.error {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: rgb(239, 68, 68);
+  border: 1px solid rgb(239, 68, 68);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+  .ahead {
+    font-size: 1.8rem;
   }
-  .hh {
-    color: white;
-    font-size: 24px;
-    padding-top: 20px;
-    font-weight: 600;
-    text-align: center;
+  
+  .ahead1 {
+    font-size: 1rem;
   }
-  .hdis {
-    color: rgb(229 231 235);
+  
+  .cflex {
+    padding: 15px;
+    margin: 0 10px;
+  }
+  
+  .cinput {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  
+  .cicon {
+    min-width: 35px;
+    height: 35px;
     font-size: 18px;
-    padding-top: 20px;
+  }
+  
+  .ctxt {
+    font-size: 14px;
   }
 }
-@media screen and (min-width: 761px) and (max-width: 960px) {
-  .cmain {
-    background-color: rgb(17 24 39);
-    padding: 30px 30px 30px 10px;
-  }
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 768px) {
   .cflex {
-    background-color: rgb(31 41 55);
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 40px;
-    padding: 40px;
+    padding: 30px;
+    margin: 0 30px;
   }
+  
   .cflex1 {
     width: 60%;
+    padding-right: 20px;
   }
+  
   .cflex2 {
     width: 40%;
+    border-left: 1px solid rgb(75 85 99);
+    padding-left: 20px;
   }
+  
   .cinput {
-    width: 90%;
-    height: 50px;
-    background-color: rgb(55 65 81);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding-left: 45px;
-    font-size: 20px;
-    margin: 10px;
-  }
-  input::placeholder {
-    color: rgb(156 163 175);
-  }
-  textarea::placeholder {
-    color: rgb(156 163 175); 
-  }
-  .cfllex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 30px;
-  }
-  .cicon {
-    color: white;
-    background-color: rgb(8 145 178);
-    border-radius: 50%;
-    font-size: 35px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-  }
-  .ctxt {
-    color: white;
-    font-size: 24px;
-    padding-top: 20px;
-  }
-  .ctxt:hover {
-    text-decoration: underline;
-  }
-  .hflex {
-    background-color: rgb(31 41 55);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px;
-    padding: 80px 40px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .hflex {
-    display: inline-block;
-    position: relative;
-    animation: slide-in-left 6s ease-in-out forwards;
-    font-size: 2.5rem;
-    color: #fff;
-  }
-
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0); 
-      opacity: 1;
-    }
-  }
-  .hh {
-    color: white;
-    font-size: 24px;
-    padding-top: 20px;
-    font-weight: 600;
-    text-align: center;
-  }
-  .hdis {
-    color: rgb(229 231 235);
     font-size: 18px;
-    padding-top: 20px;
+  }
+  
+  .cicon {
+    min-width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  
+  .ctxt {
+    font-size: 16px;
   }
 }
-@media screen and (min-width: 961px) {
+
+/* Large screens (desktop) */
+@media screen and (min-width: 1024px) {
   .cmain {
-    background-color: rgb(17 24 39);
-    padding: 30px 30px 30px 10px;
+    padding: 40px 20px;
   }
+  
+  .ahead {
+    font-size: 2.5rem;
+  }
+  
+  .ahead1 {
+    font-size: 1.3rem;
+  }
+  
   .cflex {
-    background-color: rgb(31 41 55);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px 100px 100px 100px;
     padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
+  
   .cflex1 {
     width: 65%;
+    padding-right: 40px;
   }
+  
   .cflex2 {
     width: 35%;
+    padding-left: 40px;
   }
+  
   .cinput {
-    width: 90%;
-    height: 50px;
-    background-color: rgb(55 65 81);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding-left: 45px;
-    font-size: 20px;
-    margin: 10px;
-  }
-  input::placeholder {
-    color: rgb(156 163 175); 
-  }
-  textarea::placeholder {
-    color: rgb(156 163 175);
-  }
-  .cfllex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 30px;
-  }
-  .cicon {
-    color: white;
-    background-color: rgb(8 145 178);
-    border-radius: 50%;
-    /* padding: 10px; */
-    font-size: 35px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-  }
-  .ctxt {
-    color: white;
-    font-size: 24px;
-    padding-top: 20px;
-  }
-  .ctxt:hover {
-    text-decoration: underline;
-  }
-  .hflex {
-    background-color: rgb(31 41 55);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 200px 100px 200px;
-    padding: 80px 40px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .hflex {
-    display: inline-block;
-    position: relative;
-    animation: slide-in-left 6s ease-in-out forwards;
-    font-size: 2.5rem;
-    color: #fff;
-  }
-
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0); 
-      opacity: 1;
-    }
-  }
-  .hh {
-    color: white;
-    font-size: 24px;
-    padding-top: 20px;
-    font-weight: 600;
-    text-align: center;
-  }
-  .hdis {
-    color: rgb(229 231 235);
+    padding: 15px 20px;
     font-size: 18px;
-    padding-top: 20px;
+  }
+  
+  .cicon {
+    min-width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .ctxt {
+    font-size: 18px;
+  }
+  
+  .hbtn {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+
+/* Extra large screens */
+@media screen and (min-width: 1280px) {
+  .cflex {
+    max-width: 1400px;
   }
 }

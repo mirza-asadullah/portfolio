@@ -1,401 +1,360 @@
-@media screen and (min-width: 320px) and (max-width: 540px) {
-  .hflex1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 100px;
-    background-color: rgb(17 24 39);
-    position: relative;
-  }
-  .hdiv1 {
-    width: 100%;
-    text-align: center;
-  }
-  .hpic {
-    width: 250px;
-    height: 250px;
-  }
-  .hdiv2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-  }
-  .hh1 {
-    font-size: 30px;
-    font-weight: 600;
-    color: rgb(8 145 178);
-    text-align: center;
-  }
-  .hh2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-  }
-  .hflex2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-  }
+/* Base styles for all screen sizes */
+.home-container {
+  width: 100%;
+  overflow-x: hidden;
+}
 
-  .hh3 {
-    display: none;
-  }
-  .hh4 {
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(34 211 238);
-  }
-  .hbtn {
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    background-color: rgb(8 145 178);
-    border: 1px solid rgb(8 145 178);
-    border-radius: 20px;
-    padding: 5px 10px;
-    text-align: center;
-  }
-  .rhbttn {
-    text-align: center;
-    margin: 0px;
-    margin-top: 0px;
-  }
-  .rwht {
-    width: 50px;
-    height: 50px;
-  }
-  .wht {
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    background-color: white;
-    border-radius: 50%;
-    padding: 1px;
-    margin: 10px;
-    margin-bottom: 50px;
-    animation: bounce 2s;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
-    animation-iteration-count: infinite;
-  }
+.hflex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(17 24 39);
+  position: relative;
+  padding: 80px 20px 40px;
+  min-height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  @keyframes bounce {
-    from {
-      transform: translate3d(0, 20px, 0);
-    }
+.hdiv1, .hdiv2 {
+  width: 100%;
+  box-sizing: border-box;
+}
 
-    to {
-      transform: translate3d(0, 50px, 0);
-    }
+.hdiv1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hdiv2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.himg {
+  display: flex;
+  justify-content: center;
+}
+
+.hpic {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(8, 145, 178, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hpic:hover {
+  transform: scale(1.05);
+}
+
+.hh1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(8 145 178);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hh2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hflex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hh3 {
+  display: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(75 85 99);
+}
+
+.hh4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(34 211 238);
+  text-align: center;
+}
+
+.rhbttn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hbtn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(8 145 178);
+  border: 1px solid rgb(8 145 178);
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hbtn:hover {
+  background-color: rgb(6 182 212);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(8, 145, 178, 0.4);
+}
+
+.rwht {
+  width: 50px;
+  height: 50px;
+}
+
+.wht {
+  position: fixed;
+  z-index: 100;
+  bottom: 30px;
+  right: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s alternate infinite cubic-bezier(0.5, 0.05, 1, 0.5);
+  transition: all 0.3s ease;
+}
+
+.wht:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  .swidth {
-    width: 300px;
+  to {
+    transform: translate3d(0, 15px, 0);
   }
 }
-@media screen and (min-width: 541px) and (max-width: 760px) {
+
+.swidth {
+  width: 300px;
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
   .hflex1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 100px;
-    background-color: rgb(17 24 39);
-    position: relative;
+    padding-top: 60px;
   }
-  .hdiv1 {
-    width: 100%;
-    text-align: center;
-  }
+  
   .hpic {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
   }
-  .hdiv2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-  }
+  
   .hh1 {
-    font-size: 40px;
-    font-weight: 600;
-    color: rgb(8 145 178);
-    text-align: center;
+    font-size: 2rem;
   }
+  
   .hh2 {
-    font-size: 34px;
-    font-weight: 600;
-    color: white;
-    text-align: center;
+    font-size: 1.3rem;
   }
-  .hflex2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .hh3 {
-    /* font-size: 30px;
-                font-weight: 600;
-                color: rgb(75 85 99);
-              margin-right: -50px;
-                */
-    display: none;
-  }
+  
   .hh4 {
-    font-size: 30px;
-    font-weight: 600;
-    color: rgb(34 211 238);
+    font-size: 1rem;
   }
+  
   .hbtn {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    background-color: rgb(8 145 178);
-    border: 1px solid rgb(8 145 178);
-    border-radius: 20px;
-    padding: 5px 10px;
-    text-align: center;
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
-  .rhbttn {
-    text-align: center;
-    margin: 0px;
-    margin-top: 0px;
-  }
+  
   .rwht {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
+  
   .wht {
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    background-color: white;
-    border-radius: 50%;
-    padding: 1px;
-    margin: 30px;
-    animation: bounce 2s;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes bounce {
-    from {
-      transform: translate3d(0, 20px, 0);
-    }
-
-    to {
-      transform: translate3d(0, 50px, 0);
-    }
-  }
-  .hpic {
-    width: 350px;
-    height: 350px;
-  }
-  .swidth {
-    width: 300px;
+    bottom: 20px;
+    right: 15px;
   }
 }
-@media screen and (min-width: 761px) and (max-width: 940px) {
-  .swidth {
+
+/* Medium mobile to tablet screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hpic {
     width: 300px;
+    height: 300px;
   }
+  
+  .hh1 {
+    font-size: 2.5rem;
+  }
+  
+  .hh2 {
+    font-size: 1.8rem;
+  }
+  
+  .hh4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablets to small laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .hflex1 {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-top: 100px;
-    background-color: rgb(17 24 39);
-    position: relative;
+    padding: 80px 40px 40px;
   }
+  
+  .hdiv1 {
+    width: 45%;
+    text-align: right;
+    padding-right: 20px;
+  }
+  
+  .hdiv2 {
+    width: 55%;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  
+  .hpic {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .hh1, .hh2, .hflex2 {
+    text-align: left;
+  }
+  
+  .hh3 {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  
+  .hh4 {
+    font-size: 1.5rem;
+  }
+  
+  .rhbttn {
+    text-align: left;
+  }
+  
+  .rwht {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .wht {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+/* Desktops and larger screens */
+@media screen and (min-width: 1025px) {
+  .hflex1 {
+    flex-direction: row;
+    padding: 100px 80px 60px;
+  }
+  
+  .hdiv1 {
+    width: 45%;
+    text-align: right;
+    padding-right: 40px;
+  }
+  
+  .hdiv2 {
+    width: 55%;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  
   .hpic {
     width: 400px;
     height: 400px;
   }
-  .hdiv1 {
-    width: 50%;
-    text-align: end;
-  }
-  .himg {
-    width: 100%;
-    height: 100%;
-    right: 0;
-  }
-  .hdiv2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  
   .hh1 {
-    font-size: 40px;
-    font-weight: 600;
-    color: rgb(8 145 178);
+    font-size: 3.5rem;
+    text-align: left;
   }
+  
   .hh2 {
-    font-size: 30px;
-    font-weight: 600;
-    color: white;
+    font-size: 2rem;
+    text-align: left;
   }
+  
   .hflex2 {
-    display: flex;
-    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
   }
-
+  
   .hh3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: rgb(75 85 99);
-    width: 200px;
+    display: inline-block;
+    font-size: 1.8rem;
   }
+  
   .hh4 {
-    font-size: 24px;
-    font-weight: 600;
-    color: rgb(34 211 238);
+    font-size: 1.8rem;
   }
+  
+  .rhbttn {
+    text-align: left;
+  }
+  
   .hbtn {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    background-color: rgb(8 145 178);
-    border: 1px solid rgb(8 145 178);
-    border-radius: 20px;
-    padding: 5px 20px;
+    font-size: 1.1rem;
+    padding: 12px 25px;
   }
-  .hbtn:hover {
-    transform: scale(1.05); /* Zoom effect */
-  }
+  
   .rwht {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
   }
+  
   .wht {
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    background-color: white;
-    border-radius: 50%;
-    padding: 1px;
-    margin: 50px;
-    animation: bounce 2s;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes bounce {
-    from {
-      transform: translate3d(0, 20px, 0);
-    }
-
-    to {
-      transform: translate3d(0, 50px, 0);
-    }
+    bottom: 40px;
+    right: 40px;
   }
 }
-@media screen and (min-width: 941px) {
-  .swidth {
-    width: 350px;
-  }
+
+/* Extra large screens */
+@media screen and (min-width: 1440px) {
   .hflex1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 100px;
-    background-color: rgb(17 24 39);
-    position: relative;
+    padding: 120px 120px 80px;
   }
-  .hdiv1 {
-    width: 50%;
-    text-align: end;
+  
+  .hpic {
+    width: 450px;
+    height: 450px;
   }
-  .himg {
-    width: 100%;
-    height: 100%;
-    right: 0;
-  }
-  .hdiv2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  
   .hh1 {
-    font-size: 70px;
-    font-weight: 600;
-    color: rgb(8 145 178);
+    font-size: 4rem;
   }
+  
   .hh2 {
-    font-size: 40px;
-    font-weight: 600;
-    color: white;
+    font-size: 2.5rem;
   }
-  .hflex2 {
-    display: flex;
-    flex-direction: row;
+  
+  .hh3, .hh4 {
+    font-size: 2.0rem;
   }
-
-  .hh3 {
-    font-size: 35px;
-    font-weight: 600;
-    color: rgb(75 85 99);
-  }
-  .hh4 {
-    font-size: 35px;
-    font-weight: 600;
-    color: rgb(34 211 238);
-  }
+  
   .hbtn {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    background-color: rgb(8 145 178);
-    border: 1px solid rgb(8 145 178);
-    border-radius: 20px;
-    padding: 5px 20px;
-  }
-  .hbtn:hover {
-    transform: scale(1.05); /* Zoom effect */
-  }
-  .rwht {
-    width: 70px;
-    height: 70px;
-  }
-  .wht {
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    background-color: white;
-    border-radius: 50%;
-    padding: 1px;
-    margin: 50px;
-    animation: bounce 2s;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes bounce {
-    from {
-      transform: translate3d(0, 20px, 0);
-    }
-
-    to {
-      transform: translate3d(0, 50px, 0);
-    }
+    font-size: 1.2rem;
+    padding: 15px 30px;
   }
 }
