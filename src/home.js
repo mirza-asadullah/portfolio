@@ -8,13 +8,11 @@ import Footer from './footer';
 import Contact from './contact';
 import Hire from './hire';
 import Projects from './projects';
-import RespHeader from './respheader';
 
 export default function Home() {
   return (
     <div className="home-container">
-      <Header />
-      <RespHeader />
+    <div>  <Header /></div>
       
       <div className="wht">
         <a 
@@ -48,7 +46,7 @@ export default function Home() {
           
           <div className="hflex2">
             <div className="hh3">I am a&nbsp;</div>
-            <div className="hh3">
+            <div className="hh4">
               <SimpleSlider />
             </div>
           </div>
