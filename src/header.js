@@ -31,7 +31,7 @@ export default function Header() {
   const scrollToAbout = (e) => {
     e.preventDefault(); // Prevent default link behavior
     window.scrollTo({
-      top: window.innerWidth <= 767 ? 500 : 950, // Adjust for mobile vs desktop
+      top: window.innerWidth <= 767 ? 500 : 1050, // Adjust for mobile vs desktop
       behavior: 'smooth'
     });
     closeMenu();
