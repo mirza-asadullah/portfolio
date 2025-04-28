@@ -16,7 +16,7 @@ export default function Home() {
       
       <div className="wht">
         <a 
-          href="https://wa.me/+923044040674" 
+          href="https://wa.me/+923044140674" 
           target="_blank" 
           rel="noreferrer" 
           aria-label="Contact on WhatsApp"
@@ -53,7 +53,7 @@ export default function Home() {
           
           <div className="rhbttn">
             <a 
-              href="https://wa.me/+923044040674" 
+              href="https://wa.me/+923044140674" 
               target="_blank" 
               rel="noreferrer" 
               className="hbtn"
